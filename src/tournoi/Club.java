@@ -9,12 +9,12 @@ import java.util.*;
  */
 public class Club {
 	private List<Equipe> equipe=new ArrayList<Equipe>();
-	private List<Combat> combat=new ArrayList<Combat>();
+	private List<Session> combat=new ArrayList<Session>();
 
 	/**
 	 * Constructeur à deux arguments(une liste dequipe et une liste de combat)
 	 */
-	public Club(List<Equipe> equipe, List<Combat> combat) {
+	public Club(List<Equipe> equipe, List<Session> combat) {
 		// TODO Auto-generated constructor stub
 		this.equipe=equipe;
 		this.combat=combat;
@@ -28,11 +28,11 @@ public class Club {
 		this.equipe = equipe;
 	}
 
-	public List<Combat> getCombat() {
+	public List<Session> getCombat() {
 		return combat;
 	}
 
-	public void setCombat(List<Combat> combat) {
+	public void setCombat(List<Session> combat) {
 		this.combat = combat;
 	}
 

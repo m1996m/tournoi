@@ -6,7 +6,7 @@ import java.util.*;
  * @author DELL
  *Class permettant de creer un combat
  */
-public class Combat {
+public class Session {
 	// Declaration des attributs equipe1,equipe2 et nombrebre de Manche
 	private Equipe equipe1;
 	private Equipe equipe2;
@@ -15,7 +15,7 @@ public class Combat {
 	/**
 	 * Construct avec trois arguments qui sont: equipe1,equipe2 et le nombre de manche
 	 */
-	public Combat(Equipe equipe1,Equipe equipe2, int nombreManche) {
+	public Session(Equipe equipe1,Equipe equipe2, int nombreManche) {
 		// TODO Auto-generated constructor stub
 		this.equipe1=equipe1;
 		this.equipe2=equipe2;
