@@ -9,15 +9,15 @@ import java.util.*;
  */
 public class Club {
 	private List<Equipe> equipe=new ArrayList<Equipe>();
-	private List<Session> combat=new ArrayList<Session>();
-
+	private Session session;
 	/**
 	 * Constructeur à deux arguments(une liste dequipe et une liste de combat)
 	 */
-	public Club(List<Equipe> equipe, List<Session> combat) {
+	public Club(List<Equipe> equipe, Session session) {
 		// TODO Auto-generated constructor stub
 		this.equipe=equipe;
-		this.combat=combat;
+		this.session=session;
+		
 	}
 
 	public List<Equipe> getEquipe() {
@@ -28,12 +28,34 @@ public class Club {
 		this.equipe = equipe;
 	}
 
-	public List<Session> getCombat() {
-		return combat;
+	public Session getSession() {
+		return session;
 	}
 
-	public void setCombat(List<Session> combat) {
-		this.combat = combat;
+	
+	//fonction permettant d'ajouter une equipe qui reçoit en parametre une session
+
+	public void AjoutEquipe(Equipe equipe) {
+		
 	}
+	//fonciton qui permet de creer une session qui reçoit en parametre une session
+	public void CreerSession(Session session) {
+		
+	}
+	
+	//fonction qui permet d'arreter ou debuter une session
+	public void arreterOuDebuterSession(Session session) {
+		
+		
+	
+	}
+	//fonction qui permet de verifier si une session est encours
+	/*public int isSessionStart(Session session) {
+		
+		return 0;
+	}*/
+	
+	
+	
 
 }

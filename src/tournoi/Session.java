@@ -10,12 +10,13 @@ public class Session {
 	// Declaration des attributs equipe1,equipe2 et nombrebre de Manche
 	private Equipe equipe1;
 	private Equipe equipe2;
-	private int nombreManche;
+	private Manche nombreManche;
+	
 
 	/**
 	 * Construct avec trois arguments qui sont: equipe1,equipe2 et le nombre de manche
 	 */
-	public Session(Equipe equipe1,Equipe equipe2, int nombreManche) {
+	public Session(Equipe equipe1,Equipe equipe2, Manche nombreManche) {
 		// TODO Auto-generated constructor stub
 		this.equipe1=equipe1;
 		this.equipe2=equipe2;
@@ -38,12 +39,31 @@ public class Session {
 		this.equipe2 = equipe2;
 	}
 
-	public int getNombreManche() {
+	public Manche getNombreManche() {
 		return nombreManche;
 	}
 
-	public void setNombreManche(int nombreManche) {
+	public void setNombreManche(Manche nombreManche) {
 		this.nombreManche = nombreManche;
+	}
+	
+	//fonciton qui permet debuter ou arreter une manche
+
+	public void DebuterOuArreterManche(Manche manche) {
+		
+	}
+	//fonciton qui permet debuter ou arreter une manche
+	public int isManscheStart(Manche manche) {
+		
+		return 0;
+		
+	}
+	
+	//qui permet de mettre à jour le score d'une session ou d'une manche
+	public void miseAjourScore(Equipe equipe1, Equipe equipe2) {
+		
+		
+		
 	}
 
 }
