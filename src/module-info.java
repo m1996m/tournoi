@@ -6,4 +6,5 @@
  *
  */
 module tournoi {
+	requires junit;
 }

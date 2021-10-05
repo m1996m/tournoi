@@ -11,16 +11,17 @@ public class Session {
 	private Equipe equipe1;
 	private Equipe equipe2;
 	private Manche nombreManche;
+	private int isSession;
 	
 
 	/**
 	 * Construct avec trois arguments qui sont: equipe1,equipe2 et le nombre de manche
 	 */
-	public Session(Equipe equipe1,Equipe equipe2, Manche nombreManche) {
+	public Session(Equipe equipe1,Equipe equipe2) {
 		// TODO Auto-generated constructor stub
 		this.equipe1=equipe1;
 		this.equipe2=equipe2;
-		this.nombreManche=nombreManche;
+		this.nombreManche=null;
 	}
 
 	public Equipe getEquipe1() {
@@ -48,6 +49,17 @@ public class Session {
 	}
 	
 	//fonciton qui permet debuter ou arreter une manche
+
+	public int getIsSession() {
+		return isSession;
+	}
+
+	public void setIsSession(int isSession) {
+		this.isSession = isSession;
+	}
+	public void creerManche(Manche manche) {
+		
+	}
 
 	public void DebuterOuArreterManche(Manche manche) {
 		

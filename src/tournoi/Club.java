@@ -13,10 +13,10 @@ public class Club {
 	/**
 	 * Constructeur à deux arguments(une liste dequipe et une liste de combat)
 	 */
-	public Club(List<Equipe> equipe, Session session) {
+	public Club() {
 		// TODO Auto-generated constructor stub
-		this.equipe=equipe;
-		this.session=session;
+		this.equipe = null;
+		this.session = null;
 		
 	}
 
@@ -35,7 +35,7 @@ public class Club {
 	
 	//fonction permettant d'ajouter une equipe qui reçoit en parametre une session
 
-	public void AjoutEquipe(Equipe equipe) {
+	public void creerEquipe(List<Equipe> equipe) {
 		
 	}
 	//fonciton qui permet de creer une session qui reçoit en parametre une session
