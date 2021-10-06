@@ -17,14 +17,17 @@ public class TestJunit {
 	@Test
 	public void testIsSession() {
 		
-		assertEquals("Aucune session n'a été pas créée", null, club.getSession());
+		club.CreerSession();
+		assertNotNull("Aucune session n'a été pas créée", club.getSession());
 		
 	}
 	@Test
 	public void TestEquipeExiste() {
-		assertEquals("Aucune Equipe n'a été pas créée", null, club.getEquipe());
+		club.creerEquipe();
+		assertNotNull("Aucune Equipe n'a été pas créée", club.getEquipe());
 		
 	}
+
 	/*
 	
 	@Test

@@ -34,11 +34,23 @@ public class Club {
 	
 	//fonction permettant d'ajouter une equipe qui reçoit en parametre une session
 
-	public void creerEquipe(List<Equipe> equipe) {
-		
+	public void setSession(Session session) {
+		this.session = session;
 	}
-	//fonciton qui permet de creer une session qui reçoit en parametre une session
-	public void CreerSession(Session session) {
+
+	public void creerEquipe() {
+		
+		Equipe equipe1=new Equipe();
+		Equipe equipe2=new Equipe();
+		List<Equipe> l=new ArrayList<Equipe>();
+		l.add(equipe1);
+		l.add(equipe2);
+		this.setEquipe(l);	
+
+	}
+	//fonciton qu i permet de creer une session qui re çoit en parametre une sessio n 
+	public void CreerSession() {
+		this.setSession(new Session());
 		
 	}
 	
