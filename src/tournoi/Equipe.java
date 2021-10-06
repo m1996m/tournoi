@@ -17,12 +17,13 @@ public class Equipe {
 	/**
 	 * 
 	 */
-	public Equipe() {
-		/*this.joueur=joueur;
+	/*public Equipe() {
+		// TODO Auto-generated constructor stub
+		this.joueur=joueur;
 		this.nombrePoids=nombrePoids;
 		this.nombreJoueur=nombreJoueur;
-		this.nombrePoint=nombrePoint;*/
-	}
+		this.nombrePoint=nombrePoint;
+	}*/
 	public List<Joueur> getJoueur() {
 		return joueur;
 	}

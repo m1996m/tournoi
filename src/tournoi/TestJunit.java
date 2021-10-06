@@ -20,14 +20,14 @@ public class TestJunit {
 	public void testIsSession() {
 		
 		club.CreerSession();
-		assertNull("Aucune session n'a été pas créée", club.getSession());
+		assertNotNull("Aucune session n'a été pas créée", club.getSession());
 		
 	}
 	//Un test qui permet de verifier si une equipe existe dans l'objet club.
 	@Test
 	public void TestEquipeExiste() {
 		club.creerEquipe();
-		assertNull("Aucune Equipe n'a été pas créée", club.getEquipe());
+		assertNotNull("Aucune Equipe n'a été pas créée", club.getEquipe().get(0));
 		
 	}
 	
@@ -35,8 +35,9 @@ public class TestJunit {
 	@Test
 	public void testJoueurExisteDansEquipe() {
 		club.creerEquipe();
-		assertNull("Aucun joueur n'a été pas enregistré", club.getEquipe().get(0).getJoueur());
-		assertNull("Aucune joueur n'a été pas enregistré", club.getEquipe().get(1).getJoueur());
+		club.remplissageJoueurJoueur(club.getEquipe().get(0), club.getEquipe().get(1), club);
+		assertNotNull("Aucun joueur n'a été pas enregistré", club.getEquipe().get(0).getJoueur().get(0));
+		assertNotNull("Aucun joueur n'a été pas enregistré", club.getEquipe().get(1).getJoueur().get(1));
 	}
 
 	/*
