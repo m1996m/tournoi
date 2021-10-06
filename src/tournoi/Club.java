@@ -15,9 +15,8 @@ public class Club {
 	 */
 	public Club() {
 		// TODO Auto-generated constructor stub
-		this.equipe = null;
-		this.session = null;
-		
+		//this.equipe = null;
+		//this.session = null;	
 	}
 
 	public List<Equipe> getEquipe() {

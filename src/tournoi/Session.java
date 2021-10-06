@@ -17,12 +17,12 @@ public class Session {
 	/**
 	 * Construct avec trois arguments qui sont: equipe1,equipe2 et le nombre de manche
 	 */
-	public Session(Equipe equipe1,Equipe equipe2) {
+	/*public Session(Equipe equipe1,Equipe equipe2) {
 		// TODO Auto-generated constructor stub
 		this.equipe1=equipe1;
 		this.equipe2=equipe2;
 		this.nombreManche=null;
-	}
+	}*/
 
 	public Equipe getEquipe1() {
 		return equipe1;

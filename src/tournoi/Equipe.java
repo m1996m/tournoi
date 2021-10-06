@@ -8,7 +8,8 @@ import java.util.*;
  *
  */
 public class Equipe {
-	//Declaration des attributs liste de joueurs, nombre de joueur, nombre de poids total des joueurs, nombre de point 
+	//Declaration des attributs liste de joueurs, nombre de joueur, nombre de poidstotal des joueurs, nombre de point 
+	
 	private List<Joueur> joueur =new ArrayList<Joueur>();
 	private int nombreJoueur;
 	private double nombrePoids;
@@ -16,13 +17,13 @@ public class Equipe {
 	/**
 	 * 
 	 */
-	public Equipe(List<Joueur> joueur, int nombreJoueur, double nombrePoids,int nombrePoint) {
+	/*public Equipe(List<Joueur> joueur, int nombreJoueur, double nombrePoids,int nombrePoint) {
 		// TODO Auto-generated constructor stub
 		this.joueur=joueur;
 		this.nombrePoids=nombrePoids;
 		this.nombreJoueur=nombreJoueur;
 		this.nombrePoint=nombrePoint;
-	}
+	}*/
 	public List<Joueur> getJoueur() {
 		return joueur;
 	}

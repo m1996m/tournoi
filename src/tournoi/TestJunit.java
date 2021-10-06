@@ -12,18 +12,20 @@ import org.junit.Test;
  *
  */
 public class TestJunit {
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+	Club club=new Club();
 	
 	@Test
-	public void testIsSession(Session session) {
+	public void testIsSession() {
 		
-		assertEquals("Aucune session n'a été pas créée", null, session);
+		assertEquals("Aucune session n'a été pas créée", null, club.getSession());
 		
 	}
+	@Test
+	public void TestEquipeExiste() {
+		assertEquals("Aucune Equipe n'a été pas créée", null, club.getEquipe());
+		
+	}
+	/*
 	
 	@Test
 	public void testIsManche(Manche manche) {
@@ -33,7 +35,7 @@ public class TestJunit {
 	@Test
 	public void testEquipeExiste(Equipe equipe) {
 		assertEquals("Aucune equipe n'a pas été créée", null, equipe);	
-	}
+	}*/
 	
 
 }

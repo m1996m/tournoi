@@ -11,16 +11,14 @@ public class Joueur extends Personne {
 	private Arme arme;
 	private Armure armure;
 
-	public Joueur(int id, String nom, String prenom, String adresse,double poids, int anneeP,Arme arme,Armure armure) {
+	/*public Joueur(int id, String nom, String prenom, String adresse,double poids, int anneeP,Arme arme,Armure armure) {
 		super(id, nom, prenom, adresse);
 		this.poids=poids;
 		this.anneeParticipation=anneeP;
 		this.arme=arme;
 		this.armure=armure;
 		
-		
-		// TODO Auto-generated constructor stub
-	}
+	}*/
 
 	public double getPoids() {
 		return poids;
