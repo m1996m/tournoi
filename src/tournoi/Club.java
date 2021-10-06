@@ -14,7 +14,6 @@ public class Club {
 	 * Constructeur à deux arguments(une liste dequipe et une liste de combat)
 	 */
 	public Club() {
-		// TODO Auto-generated constructor stub
 		//this.equipe = null;
 		//this.session = null;	
 	}
@@ -46,7 +45,6 @@ public class Club {
 		l.add(equipe1);
 		l.add(equipe2);
 		this.setEquipe(l);	
-
 	}
 	//fonciton qu i permet de creer une session qui re çoit en parametre une sessio n 
 	public void CreerSession() {

@@ -13,19 +13,30 @@ import org.junit.Test;
  */
 public class TestJunit {
 	Club club=new Club();
+	Equipe eq=new Equipe();
 	
+	//Un test qui permet de verifier si une session existe dans l'objet club.
 	@Test
 	public void testIsSession() {
 		
 		club.CreerSession();
-		assertNotNull("Aucune session n'a été pas créée", club.getSession());
+		assertNull("Aucune session n'a été pas créée", club.getSession());
 		
 	}
+	//Un test qui permet de verifier si une equipe existe dans l'objet club.
 	@Test
 	public void TestEquipeExiste() {
 		club.creerEquipe();
-		assertNotNull("Aucune Equipe n'a été pas créée", club.getEquipe());
+		assertNull("Aucune Equipe n'a été pas créée", club.getEquipe());
 		
+	}
+	
+	//Un test qui permet de verifier s'il ya des joueurs dans l'objet Equipe d'un club.
+	@Test
+	public void testJoueurExisteDansEquipe() {
+		club.creerEquipe();
+		assertNull("Aucun joueur n'a été pas enregistré", club.getEquipe().get(0).getJoueur());
+		assertNull("Aucune joueur n'a été pas enregistré", club.getEquipe().get(1).getJoueur());
 	}
 
 	/*
